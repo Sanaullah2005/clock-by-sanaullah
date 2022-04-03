@@ -20,7 +20,12 @@
         <div class="sc" id="sc"></div>
     </div>
 </div>
+<div class="toggleClass" onclick="toggleClass()"></div>
 <script>
+    function toggleClass(){
+        var body = document.querySelector('body');
+        body.classList.toggle('light');
+    }
     var deg = 6;
     var hr = document.querySelector('#hr');
     var mn = document.querySelector('#mn');
